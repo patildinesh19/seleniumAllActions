@@ -50,8 +50,13 @@ public class Allwebfunctions
 	    
 	    WebElement MouseHover=  driver.findElement(By.cssSelector("#mousehover"));
 	    mouse.moveToElement(MouseHover).build().perform();
-	    driver.findElement(By.linkText("Top")).click(); 
-	    	    
+	    driver.findElement(By.linkText("Top")).click();
+	    
+	    //Drop down filed
+	    WebElement selectdropdwon = driver.findElement(By.id("dropdown-class-example"));
+	    Select select = new Select(selectdropdwon);
+	    select.selectByValue("option2");	
+	    select.selectByVisibleText("Option3");
 	    driver.close();
 
 	    
