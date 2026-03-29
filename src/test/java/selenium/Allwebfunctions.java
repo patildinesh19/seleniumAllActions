@@ -58,6 +58,7 @@ public class Allwebfunctions
 	    select.selectByValue("option2");	
 	    select.selectByVisibleText("Option3");
 	    select.selectByIndex(0);
+	    select.selectByIndex(1);
 	    driver.close();
 
 	    
