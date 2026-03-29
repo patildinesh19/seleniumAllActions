@@ -57,6 +57,7 @@ public class Allwebfunctions
 	    Select select = new Select(selectdropdwon);
 	    select.selectByValue("option2");	
 	    select.selectByVisibleText("Option3");
+	    select.selectByIndex(0);
 	    driver.close();
 
 	    
