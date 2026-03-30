@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout Project from Git') {
+            steps {
+                git branch: 'main', url: 'https://github.com/patildinesh19/seleniumAllActions.git'
+                echo 'Check out is done'
+            }
+        }
+        stage('Build the Project') {
+            steps {
+                bat 'mvn clean test'
+                echo 'Build Project sucessfully'
+            }
+        }
+    }
+}
