@@ -1,6 +1,7 @@
 package selenium;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.awt.Window;
 import java.time.Duration;
 
 import org.bouncycastle.its.ITSValidityPeriod.Unit;
@@ -26,7 +27,7 @@ public class Allwebfunctions
 	//WebDriver driver =null;
 		
 	@Test
-	public void openapplication() {
+	public void openapplication() throws InterruptedException {
 			
 	    WebDriver driver = new ChromeDriver();
 	    driver.manage().window().maximize();
@@ -72,17 +73,16 @@ public class Allwebfunctions
 	     System.out.println("frame is selected");
 	   driver.findElement(By.xpath("//div[@class='logo']//a")).isDisplayed();
 		   List<WebElement> alllinksfromframe =  driver.findElements(By.xpath("//li/a"));
-		  System.out.println("Totsal WebLinks under Frame : "+alllinksfromframe.size());
-	    
-	 /*   Wait<WebDriver> wait = new FluentWait<>(driver)
-	            .withTimeout(Duration.ofSeconds(10))
-	            .pollingEvery(Duration.ofSeconds(2))
-	            .ignoring(NoSuchElementException.class);
-
-	    wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("courses-iframe")); */
-	   // driver.switchTo().frame("courses-iframe");
-	   // System.out.println("frame is selected");
-	    
+		  System.out.println("Totsal WebLinks under Frame : "+alllinksfromframe.size());	    
+		  WebElement morelink = driver.findElement(By.linkText("More"));
+		  mouse.moveToElement(morelink).build().perform();
+		  
+		 
+		  WebDriverWait wt = new WebDriverWait(driver,Duration.ofSeconds(10));
+			wt.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.linkText("Contact"))));
+			driver.findElement(By.linkText("Contact")).click();
+			Thread.sleep(1000);
+		
 	   driver.switchTo().defaultContent();
 	    driver.close();
 
