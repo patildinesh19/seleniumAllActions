@@ -1,18 +1,21 @@
 package selenium;
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.time.Duration;
 
 import org.bouncycastle.its.ITSValidityPeriod.Unit;
-import org.bouncycastle.oer.its.ieee1609dot2.basetypes.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
@@ -59,9 +62,32 @@ public class Allwebfunctions
 	    select.selectByVisibleText("Option3");
 	    select.selectByIndex(0);
 	    select.selectByIndex(1);
+	    
+	    // Iframe
+	    List<WebElement> frames = driver.findElements(By.tagName("iframe"));
+	    System.out.println("Total frames: " + frames.size());
+	    
+	    WebElement frame = driver.findElement(By.xpath("//iframe[@id='courses-iframe']"));
+	    driver.switchTo().frame(frame);
+	     System.out.println("frame is selected");
+	   driver.findElement(By.xpath("//div[@class='logo']//a")).isDisplayed();
+		   List<WebElement> alllinksfromframe =  driver.findElements(By.xpath("//li/a"));
+		  System.out.println("Totsal WebLinks under Frame : "+alllinksfromframe.size());
+	    
+	 /*   Wait<WebDriver> wait = new FluentWait<>(driver)
+	            .withTimeout(Duration.ofSeconds(10))
+	            .pollingEvery(Duration.ofSeconds(2))
+	            .ignoring(NoSuchElementException.class);
+
+	    wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("courses-iframe")); */
+	   // driver.switchTo().frame("courses-iframe");
+	   // System.out.println("frame is selected");
+	    
+	   driver.switchTo().defaultContent();
 	    driver.close();
 
 	    
 	}
+
 	
 }
