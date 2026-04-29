@@ -99,7 +99,7 @@ public class Allwebfunctions {
 				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", frame);
 			}
 			driver.switchTo().frame(frame);
-			System.out.println("frame is selected");
+			System.out.println("frame is selected as per aviliable");
 			driver.findElement(By.xpath("//div[@class='logo']//a")).isDisplayed();
 			List<WebElement> alllinksfromframe = driver.findElements(By.xpath("//li/a"));
 			System.out.println("Totsal WebLinks under Frame : " + alllinksfromframe.size());
