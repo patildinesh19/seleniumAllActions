@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.Allwebfunctions">
+      <class name="automationexercise.testcases.LoginAndRegisteration">
         <methods>
+          <include name="tearDown"/>
+          <include name="intilizeDriver"/>
           <include name="openapplication"/>
+          <include name="mouseHoverProductAndClickOnAddToCart"/>
         </methods>
-      </class> <!-- selenium.Allwebfunctions -->
+      </class> <!-- automationexercise.testcases.LoginAndRegisteration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
