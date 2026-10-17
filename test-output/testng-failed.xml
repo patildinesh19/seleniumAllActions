@@ -8,6 +8,7 @@
           <include name="tearDown"/>
           <include name="intilizeDriver"/>
           <include name="openapplication"/>
+          <include name="Testcase_Registeration"/>
           <include name="mouseHoverProductAndClickOnAddToCart"/>
         </methods>
       </class> <!-- automationexercise.testcases.LoginAndRegisteration -->

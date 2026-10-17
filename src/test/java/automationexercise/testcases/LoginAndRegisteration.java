@@ -1,6 +1,10 @@
 package automationexercise.testcases;
 
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -14,8 +18,25 @@ import base.Base;
 public class LoginAndRegisteration extends Base {
 
 	@BeforeMethod
-	public void openapplication() throws InterruptedException {
-		getDriver().get("https://automationexercise.com/");
+	public void openapplication() throws InterruptedException, IOException {
+		pr = new Properties ();
+		FileInputStream fp=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\configuration.properties");
+		pr.load(fp);
+		String mavenvironment=System.getProperty("Envronment");
+		//String environment = pr.getProperty("Envronment");
+		if(mavenvironment.equalsIgnoreCase("QA")) {
+			pr.load(new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\QA.properties"));
+		}
+		else if(mavenvironment.equalsIgnoreCase("UAT")) {
+			pr.load(new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\UAT.properties"));
+		}
+		else if(mavenvironment.equalsIgnoreCase("PROD")) {
+			pr.load(new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\PROD.properties"));
+		}
+		
+		String application=pr.getProperty("URL");
+		
+		getDriver().get(application);
 	}
 	
 	@Test

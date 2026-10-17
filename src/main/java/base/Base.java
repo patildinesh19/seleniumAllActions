@@ -1,5 +1,9 @@
 package base;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -11,21 +15,28 @@ import org.testng.annotations.Test;
 
 public class Base {
 	
-	 private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-	public static String browser = "Chrome";
+	  
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	//public static String browser = "Chrome";
+	public static Properties pr;
 	// String browser = System.getProperty("browser");
 	@BeforeMethod()
-	public void intilizeDriver()
+	public void intilizeDriver() throws IOException
 	{
+		pr = new Properties ();
+		FileInputStream fp=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\configuration.properties");
+		pr.load(fp);
+		String mavenbrowsername=System.getProperty("browser");
+		//String browsername=pr.getProperty("browser");
 		WebDriver webDriver = null;
 		
 
-			if (browser.equalsIgnoreCase("Chrome")) {
+			if (mavenbrowsername.equalsIgnoreCase("Chrome")) {
 				webDriver = new ChromeDriver();
 				
 				
 				}
-			if (browser.equalsIgnoreCase("FireFox")) {
+			if (mavenbrowsername.equalsIgnoreCase("FireFox")) {
 
 				webDriver = new FirefoxDriver();
 				

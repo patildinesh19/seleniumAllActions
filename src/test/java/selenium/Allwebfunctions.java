@@ -78,7 +78,7 @@ public class Allwebfunctions extends Base1 {
 			// = drag and drop
 
 			WebElement MouseHover = driver.findElement(By.cssSelector("#mousehover"));
-			if (Base.browser.equalsIgnoreCase("FireFox")) {
+			if (Base1.browser.equalsIgnoreCase("FireFox")) {
 				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", MouseHover);
 			}
 			mouse.moveToElement(MouseHover).build().perform();

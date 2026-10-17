@@ -1,49 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-16T16:55:32 IST" name="Parallel Suite" finished-at="2026-10-16T16:56:19 IST" duration-ms="46864">
+  <suite started-at="2026-10-17T22:09:25 IST" name="Parallel Suite" finished-at="2026-10-17T22:10:08 IST" duration-ms="43467">
     <groups>
     </groups>
-    <test started-at="2026-10-16T16:55:32 IST" name="Test" finished-at="2026-10-16T16:56:19 IST" duration-ms="46864">
+    <test started-at="2026-10-17T22:09:25 IST" name="Test" finished-at="2026-10-17T22:10:08 IST" duration-ms="43467">
       <class name="automationexercise.testcases.LoginAndRegisteration">
-        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:55:32 IST" name="intilizeDriver" finished-at="2026-10-16T16:55:37 IST" duration-ms="5044" status="PASS">
+        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:25 IST" name="intilizeDriver" finished-at="2026-10-17T22:09:31 IST" duration-ms="6422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intilizeDriver -->
-        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:55:32 IST" name="intilizeDriver" finished-at="2026-10-16T16:55:37 IST" duration-ms="5090" status="PASS">
+        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:25 IST" name="intilizeDriver" finished-at="2026-10-17T22:09:31 IST" duration-ms="6360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intilizeDriver -->
-        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:55:32 IST" name="intilizeDriver" finished-at="2026-10-16T16:55:38 IST" duration-ms="5850" status="PASS">
+        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:25 IST" name="intilizeDriver" finished-at="2026-10-17T22:09:31 IST" duration-ms="6192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intilizeDriver -->
-        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:55:32 IST" name="intilizeDriver" finished-at="2026-10-16T16:55:37 IST" duration-ms="5105" status="PASS">
+        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:25 IST" name="intilizeDriver" finished-at="2026-10-17T22:09:32 IST" duration-ms="6846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intilizeDriver -->
-        <test-method is-config="true" signature="openapplication()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:55:37 IST" name="openapplication" finished-at="2026-10-16T16:55:43 IST" duration-ms="6310" status="PASS">
+        <test-method is-config="true" signature="openapplication()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:31 IST" name="openapplication" finished-at="2026-10-17T22:09:37 IST" duration-ms="5603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapplication -->
-        <test-method is-config="true" signature="openapplication()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:55:37 IST" name="openapplication" finished-at="2026-10-16T16:55:46 IST" duration-ms="8757" status="PASS">
+        <test-method is-config="true" signature="openapplication()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:31 IST" name="openapplication" finished-at="2026-10-17T22:09:41 IST" duration-ms="9762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapplication -->
-        <test-method is-config="true" signature="openapplication()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:55:37 IST" name="openapplication" finished-at="2026-10-16T16:55:47 IST" duration-ms="10174" status="PASS">
+        <test-method is-config="true" signature="openapplication()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:31 IST" name="openapplication" finished-at="2026-10-17T22:09:45 IST" duration-ms="13862" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapplication -->
-        <test-method is-config="true" signature="openapplication()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:55:38 IST" name="openapplication" finished-at="2026-10-16T16:55:48 IST" duration-ms="10517" status="PASS">
+        <test-method is-config="true" signature="openapplication()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:32 IST" name="openapplication" finished-at="2026-10-17T22:09:45 IST" duration-ms="12953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapplication -->
-        <test-method signature="Testcase_Registeration()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:55:43 IST" name="Testcase_Registeration" finished-at="2026-10-16T16:56:08 IST" duration-ms="24208" status="PASS">
+        <test-method signature="LoginAndVerifyallProductimageloaded()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:37 IST" name="LoginAndVerifyallProductimageloaded" finished-at="2026-10-17T22:09:55 IST" duration-ms="17791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAndVerifyallProductimageloaded -->
+        <test-method signature="Testcase_Registeration()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:41 IST" name="Testcase_Registeration" finished-at="2026-10-17T22:10:08 IST" duration-ms="26868" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //input[@value='Mr'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.79, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56283}, goog:processID: 21468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56283/devtoo..., se:cdpVersion: 155.0.8059.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e8b7915c21ef1c3e4c42998a40aec0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@value='Mr'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.79, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56283}, goog:processID: 21468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56283/devtoo..., se:cdpVersion: 155.0.8059.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e8b7915c21ef1c3e4c42998a40aec0
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at PageObject.automationexercise.Signup.selectTitle(Signup.java:43)
+at automationexercise.testcases.LoginAndRegisteration.Testcase_Registeration(LoginAndRegisteration.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Testcase_Registeration -->
-        <test-method signature="mouseHoverProductAndClickOnAddToCart()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:55:46 IST" name="mouseHoverProductAndClickOnAddToCart" finished-at="2026-10-16T16:56:18 IST" duration-ms="32535" status="FAIL">
+        <test-method signature="VerifyPasswordRequiredField()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:45 IST" name="VerifyPasswordRequiredField" finished-at="2026-10-17T22:09:57 IST" duration-ms="11965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPasswordRequiredField -->
+        <test-method signature="mouseHoverProductAndClickOnAddToCart()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:45 IST" name="mouseHoverProductAndClickOnAddToCart" finished-at="2026-10-17T22:10:07 IST" duration-ms="22227" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
@@ -51,10 +97,10 @@
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [531415ea1b8dbf743427bf0ebbb3b906, clickElement {id=f.D59A4E0397BB6A2A2DAC8F02D2BA221A.d.391D608832075A73462CA3171466F1CD.e.1080}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.79, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60459}, goog:processID: 15968, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60459/devtoo..., se:cdpVersion: 155.0.8059.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (531415ea1b8dbf743427bf0ebbb3b906)] -> xpath: //div[@class='overlay-content']//a[contains(text(),'Add to cart')]]
-Session ID: 531415ea1b8dbf743427bf0ebbb3b906]]>
+Command: [a271d7fbc7faaa2ee3c6557d44f355ef, clickElement {id=f.E47531B2A37125A03463E65A91595CED.d.D0814ED0A741341A292CB0C2E5FDAC1A.e.1050}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.79, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56282}, goog:processID: 19580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56282/devtoo..., se:cdpVersion: 155.0.8059.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a271d7fbc7faaa2ee3c6557d44f355ef)] -> xpath: //div[@class='overlay-content']//a[contains(text(),'Add to cart')]]
+Session ID: a271d7fbc7faaa2ee3c6557d44f355ef]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -62,10 +108,10 @@ Session ID: 531415ea1b8dbf743427bf0ebbb3b906]]>
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [531415ea1b8dbf743427bf0ebbb3b906, clickElement {id=f.D59A4E0397BB6A2A2DAC8F02D2BA221A.d.391D608832075A73462CA3171466F1CD.e.1080}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.79, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60459}, goog:processID: 15968, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60459/devtoo..., se:cdpVersion: 155.0.8059.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (531415ea1b8dbf743427bf0ebbb3b906)] -> xpath: //div[@class='overlay-content']//a[contains(text(),'Add to cart')]]
-Session ID: 531415ea1b8dbf743427bf0ebbb3b906
+Command: [a271d7fbc7faaa2ee3c6557d44f355ef, clickElement {id=f.E47531B2A37125A03463E65A91595CED.d.D0814ED0A741341A292CB0C2E5FDAC1A.e.1050}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.79, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56282}, goog:processID: 19580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56282/devtoo..., se:cdpVersion: 155.0.8059.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a271d7fbc7faaa2ee3c6557d44f355ef)] -> xpath: //div[@class='overlay-content']//a[contains(text(),'Add to cart')]]
+Session ID: a271d7fbc7faaa2ee3c6557d44f355ef
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -81,7 +127,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 at PageObject.automationexercise.Home.clikOnAddToCartForMouseHoverProduct(Home.java:94)
-at automationexercise.testcases.LoginAndRegisteration.mouseHoverProductAndClickOnAddToCart(LoginAndRegisteration.java:88)
+at automationexercise.testcases.LoginAndRegisteration.mouseHoverProductAndClickOnAddToCart(LoginAndRegisteration.java:109)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,27 +149,19 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mouseHoverProductAndClickOnAddToCart -->
-        <test-method signature="LoginAndVerifyallProductimageloaded()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:55:47 IST" name="LoginAndVerifyallProductimageloaded" finished-at="2026-10-16T16:56:12 IST" duration-ms="24369" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginAndVerifyallProductimageloaded -->
-        <test-method signature="VerifyPasswordRequiredField()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:55:48 IST" name="VerifyPasswordRequiredField" finished-at="2026-10-16T16:56:06 IST" duration-ms="17481" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyPasswordRequiredField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:56:06 IST" name="tearDown" finished-at="2026-10-16T16:56:14 IST" duration-ms="8180" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:55 IST" name="tearDown" finished-at="2026-10-17T22:10:00 IST" duration-ms="5062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:56:08 IST" name="tearDown" finished-at="2026-10-16T16:56:14 IST" duration-ms="6670" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:57 IST" name="tearDown" finished-at="2026-10-17T22:10:00 IST" duration-ms="2813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:56:12 IST" name="tearDown" finished-at="2026-10-16T16:56:14 IST" duration-ms="2484" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:10:07 IST" name="tearDown" finished-at="2026-10-17T22:10:08 IST" duration-ms="365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-16T16:56:18 IST" name="tearDown" finished-at="2026-10-16T16:56:19 IST" duration-ms="413" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:10:08 IST" name="tearDown" finished-at="2026-10-17T22:10:08 IST" duration-ms="406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
