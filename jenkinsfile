@@ -23,12 +23,13 @@ pipeline {
         }
         stage('Execute smoke suite') {
             steps {
-                bat "clean test -PUI_Smoke_Suite -Dbrowser=${browser} -DEnvronment=${Envronment}"
+                bat "mvn clean test -PUI_Smoke_Suite -Dbrowser=${browser} -DEnvronment=${Envronment}"
                 echo 'Smoke Suite executed sucessfully'
             }
+	}
 	stage('Execute Regression Suite') {
             steps {
-                bat "clean test -PUI_Regression_Suite -Dbrowser=${browser} -DEnvronment=${Envronment}"
+                bat "mvn clean test -PUI_Regression_Suite -Dbrowser=${browser} -DEnvronment=${Envronment}"
                 echo 'Regression suite executed sucessfully'
             }
 
