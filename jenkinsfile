@@ -1,5 +1,18 @@
 pipeline {
     agent any
+ parameters {
+        choice(
+            name: 'browser',
+            choices: ['Chrome', 'Firefox'],
+            description: 'Select browser'
+        )
+
+        choice(
+            name: 'Environment',
+            choices: ['QA', 'STG', 'DEV'],
+            description: 'Select environment'
+        )
+    }
 
     stages {
         stage('Checkout Project from Git') {
@@ -8,11 +21,17 @@ pipeline {
                 echo 'Check out is done'
             }
         }
-        stage('Build the Project') {
+        stage('Execute smoke suite') {
             steps {
-                bat 'mvn clean test'
-                echo 'Build Project sucessfully'
+                bat "clean test -PUI_Smoke_Suite -Dbrowser=${browser} -DEnvronment=${Envronment}"
+                echo 'Smoke Suite executed sucessfully'
             }
+	stage('Execute Regression Suite') {
+            steps {
+                bat "clean test -PUI_Regression_Suite -Dbrowser=${browser} -DEnvronment=${Envronment}"
+                echo 'Regression suite executed sucessfully'
+            }
+
         }
     }
 }
