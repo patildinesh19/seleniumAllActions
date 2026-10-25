@@ -32,6 +32,12 @@ pipeline {
                 bat "mvn clean test -PUI_Regression_Suite -Dbrowser=${browser} -DEnvronment=${Envronment}"
                 echo 'Regression suite executed sucessfully'
             }
+	}
+	stage('Execute kararte Suite') {
+            steps {
+                bat "mvn clean test -PKarateAPISuite -Dkarate.env=${Envronment}"
+                echo 'Karate Suite executed Sucessfully'
+            }
 
         }
     }
