@@ -1,171 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-17T22:09:25 IST" name="Parallel Suite" finished-at="2026-10-17T22:10:08 IST" duration-ms="43467">
+  <suite started-at="2026-10-25T12:50:07 IST" name="Suite" finished-at="2026-10-25T12:50:08 IST" duration-ms="200">
     <groups>
     </groups>
-    <test started-at="2026-10-17T22:09:25 IST" name="Test" finished-at="2026-10-17T22:10:08 IST" duration-ms="43467">
-      <class name="automationexercise.testcases.LoginAndRegisteration">
-        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:25 IST" name="intilizeDriver" finished-at="2026-10-17T22:09:31 IST" duration-ms="6422" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intilizeDriver -->
-        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:25 IST" name="intilizeDriver" finished-at="2026-10-17T22:09:31 IST" duration-ms="6360" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intilizeDriver -->
-        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:25 IST" name="intilizeDriver" finished-at="2026-10-17T22:09:31 IST" duration-ms="6192" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intilizeDriver -->
-        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:25 IST" name="intilizeDriver" finished-at="2026-10-17T22:09:32 IST" duration-ms="6846" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intilizeDriver -->
-        <test-method is-config="true" signature="openapplication()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:31 IST" name="openapplication" finished-at="2026-10-17T22:09:37 IST" duration-ms="5603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openapplication -->
-        <test-method is-config="true" signature="openapplication()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:31 IST" name="openapplication" finished-at="2026-10-17T22:09:41 IST" duration-ms="9762" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openapplication -->
-        <test-method is-config="true" signature="openapplication()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:31 IST" name="openapplication" finished-at="2026-10-17T22:09:45 IST" duration-ms="13862" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openapplication -->
-        <test-method is-config="true" signature="openapplication()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:32 IST" name="openapplication" finished-at="2026-10-17T22:09:45 IST" duration-ms="12953" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openapplication -->
-        <test-method signature="LoginAndVerifyallProductimageloaded()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:37 IST" name="LoginAndVerifyallProductimageloaded" finished-at="2026-10-17T22:09:55 IST" duration-ms="17791" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginAndVerifyallProductimageloaded -->
-        <test-method signature="Testcase_Registeration()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:41 IST" name="Testcase_Registeration" finished-at="2026-10-17T22:10:08 IST" duration-ms="26868" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+    <test started-at="2026-10-25T12:50:07 IST" name="DemoSite" finished-at="2026-10-25T12:50:08 IST" duration-ms="200">
+      <class name="selenium.DemoSite">
+        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:selenium.DemoSite@7c24b813]" started-at="2026-10-25T12:50:07 IST" name="intilizeDriver" finished-at="2026-10-25T12:50:07 IST" duration-ms="12" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //input[@value='Mr'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.79, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56283}, goog:processID: 21468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56283/devtoo..., se:cdpVersion: 155.0.8059.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f6e8b7915c21ef1c3e4c42998a40aec0]]>
+              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because "mavenbrowsername" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@value='Mr'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.79, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56283}, goog:processID: 21468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56283/devtoo..., se:cdpVersion: 155.0.8059.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f6e8b7915c21ef1c3e4c42998a40aec0
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at PageObject.automationexercise.Signup.selectTitle(Signup.java:43)
-at automationexercise.testcases.LoginAndRegisteration.Testcase_Registeration(LoginAndRegisteration.java:51)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "mavenbrowsername" is null
+at base.Base.intilizeDriver(Base.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testcase_Registeration -->
-        <test-method signature="VerifyPasswordRequiredField()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:45 IST" name="VerifyPasswordRequiredField" finished-at="2026-10-17T22:09:57 IST" duration-ms="11965" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyPasswordRequiredField -->
-        <test-method signature="mouseHoverProductAndClickOnAddToCart()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:45 IST" name="mouseHoverProductAndClickOnAddToCart" finished-at="2026-10-17T22:10:07 IST" duration-ms="22227" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        </test-method> <!-- intilizeDriver -->
+        <test-method signature="lunchdempapp()[pri:0, instance:selenium.DemoSite@7c24b813]" started-at="2026-10-25T12:50:07 IST" name="lunchdempapp" finished-at="2026-10-25T12:50:07 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=155.0.8059.79)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a271d7fbc7faaa2ee3c6557d44f355ef, clickElement {id=f.E47531B2A37125A03463E65A91595CED.d.D0814ED0A741341A292CB0C2E5FDAC1A.e.1050}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.79, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56282}, goog:processID: 19580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56282/devtoo..., se:cdpVersion: 155.0.8059.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a271d7fbc7faaa2ee3c6557d44f355ef)] -> xpath: //div[@class='overlay-content']//a[contains(text(),'Add to cart')]]
-Session ID: a271d7fbc7faaa2ee3c6557d44f355ef]]>
+              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because "mavenbrowsername" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=155.0.8059.79)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a271d7fbc7faaa2ee3c6557d44f355ef, clickElement {id=f.E47531B2A37125A03463E65A91595CED.d.D0814ED0A741341A292CB0C2E5FDAC1A.e.1050}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.79, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56282}, goog:processID: 19580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56282/devtoo..., se:cdpVersion: 155.0.8059.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a271d7fbc7faaa2ee3c6557d44f355ef)] -> xpath: //div[@class='overlay-content']//a[contains(text(),'Add to cart')]]
-Session ID: a271d7fbc7faaa2ee3c6557d44f355ef
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at PageObject.automationexercise.Home.clikOnAddToCartForMouseHoverProduct(Home.java:94)
-at automationexercise.testcases.LoginAndRegisteration.mouseHoverProductAndClickOnAddToCart(LoginAndRegisteration.java:109)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "mavenbrowsername" is null
+at base.Base.intilizeDriver(Base.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mouseHoverProductAndClickOnAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:55 IST" name="tearDown" finished-at="2026-10-17T22:10:00 IST" duration-ms="5062" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:09:57 IST" name="tearDown" finished-at="2026-10-17T22:10:00 IST" duration-ms="2813" status="PASS">
+        </test-method> <!-- lunchdempapp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.DemoSite@7c24b813]" started-at="2026-10-25T12:50:07 IST" name="tearDown" finished-at="2026-10-25T12:50:07 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:10:07 IST" name="tearDown" finished-at="2026-10-17T22:10:08 IST" duration-ms="365" status="PASS">
+        <test-method is-config="true" signature="intilizeDriver()[pri:0, instance:selenium.DemoSite@7c24b813]" started-at="2026-10-25T12:50:07 IST" name="intilizeDriver" finished-at="2026-10-25T12:50:07 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intilizeDriver -->
+        <test-method signature="uploadFile()[pri:0, instance:selenium.DemoSite@7c24b813]" started-at="2026-10-25T12:50:07 IST" name="uploadFile" finished-at="2026-10-25T12:50:07 IST" duration-ms="5" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because "mavenbrowsername" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "mavenbrowsername" is null
+at base.Base.intilizeDriver(Base.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadFile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.DemoSite@7c24b813]" started-at="2026-10-25T12:50:08 IST" name="tearDown" finished-at="2026-10-25T12:50:08 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationexercise.testcases.LoginAndRegisteration@dd05255]" started-at="2026-10-17T22:10:08 IST" name="tearDown" finished-at="2026-10-17T22:10:08 IST" duration-ms="406" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- automationexercise.testcases.LoginAndRegisteration -->
-    </test> <!-- Test -->
-  </suite> <!-- Parallel Suite -->
+      </class> <!-- selenium.DemoSite -->
+    </test> <!-- DemoSite -->
+  </suite> <!-- Suite -->
 </testng-results>

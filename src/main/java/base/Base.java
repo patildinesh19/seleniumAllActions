@@ -19,6 +19,7 @@ public class Base {
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	//public static String browser = "Chrome";
 	public static Properties pr;
+	
 	// String browser = System.getProperty("browser");
 	@BeforeMethod()
 	public void intilizeDriver() throws IOException

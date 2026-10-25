@@ -3,12 +3,15 @@ package selenium;
 import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Properties;
 import java.util.Set;
 
 import static org.testng.Assert.assertTrue;
 
 import java.awt.Window;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
 
 import org.bouncycastle.its.ITSValidityPeriod.Unit;
@@ -28,6 +31,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import base.Base;
@@ -39,7 +43,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 
-public class Allwebfunctions extends Base1 {
+public class Allwebfunctions extends Base {
 
 	// public static WebDriverManager driver = null;
 	// WebDriver driver =null;
@@ -47,29 +51,50 @@ public class Allwebfunctions extends Base1 {
 	// String browser = "Chrome";
 	// String browser = System.getProperty("browser");
 	// public static WebDriver driver;
-
+	@BeforeMethod
+	public void lunchdempapp() throws IOException
+	{
+		pr = new Properties ();
+		FileInputStream fp=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\configuration.properties");
+		pr.load(fp);
+		String mavenvironment=System.getProperty("Envronment");
+		//String environment = pr.getProperty("Envronment");
+		if(mavenvironment.equalsIgnoreCase("QA")) {
+			pr.load(new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\QA.properties"));
+		}
+		else if(mavenvironment.equalsIgnoreCase("UAT")) {
+			pr.load(new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\UAT.properties"));
+		}
+		else if(mavenvironment.equalsIgnoreCase("PROD")) {
+			pr.load(new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\PROD.properties"));
+		}
+		
+		String application=pr.getProperty("URLPracticesapp");
+		
+		getDriver().get(application);		
+	}
 	@Test
 	public void openapplication() throws InterruptedException {
 		try {
 
-			driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+			
 
-			List<WebElement> allradiobuttons = driver.findElements(By.name("radioButton"));
+			List<WebElement> allradiobuttons = getDriver().findElements(By.name("radioButton"));
 			System.out.println("Total number of webelements :" + allradiobuttons.size());
 			allradiobuttons.get(1).click();
-			WebElement selectedcheckbox = driver.findElement(By.xpath("//input[@value='radio3']"));
+			WebElement selectedcheckbox = getDriver().findElement(By.xpath("//input[@value='radio3']"));
 			selectedcheckbox.click();
 			Assert.assertTrue(selectedcheckbox.isSelected(), "CheckBox is selected");
 
 			// mouse over
 			String Country = "Bhutan";
-			driver.findElement(By.cssSelector("#autocomplete")).sendKeys(Country);
-			WebElement dropdownbox = driver.findElement(By.cssSelector("#ui-id-1"));
-			WebElement selectcountry = driver
+			getDriver().findElement(By.cssSelector("#autocomplete")).sendKeys(Country);
+			WebElement dropdownbox = getDriver().findElement(By.cssSelector("#ui-id-1"));
+			WebElement selectcountry = getDriver()
 					.findElement(By.xpath("//ul[@id='ui-id-1']//div[contains(text(),'" + Country + "')]"));
 			// selectcountry.click();
 			// create object for Actions class
-			Actions mouse = new Actions(driver);
+			Actions mouse = new Actions(getDriver());
 			mouse.moveToElement(selectcountry).click().build().perform();
 
 			System.out.println("Country is selected");
@@ -77,75 +102,76 @@ public class Allwebfunctions extends Base1 {
 			// contextClick() = rightclick, //doubleClick() = doubleclick, // dragAndDrop()
 			// = drag and drop
 
-			WebElement MouseHover = driver.findElement(By.cssSelector("#mousehover"));
+			WebElement MouseHover = getDriver().findElement(By.cssSelector("#mousehover"));
 			if (Base1.browser.equalsIgnoreCase("FireFox")) {
-				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", MouseHover);
+				((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView(true);", MouseHover);
 			}
 			mouse.moveToElement(MouseHover).build().perform();
-			driver.findElement(By.linkText("Top")).click();
+			getDriver().findElement(By.linkText("Top")).click();
 
 			// Drop down filed
-			WebElement selectdropdwon = driver.findElement(By.id("dropdown-class-example"));
+			WebElement selectdropdwon = getDriver().findElement(By.id("dropdown-class-example"));
 			Select select = new Select(selectdropdwon);
 			select.selectByValue("option2");
 			select.selectByVisibleText("Option3");
 			select.selectByIndex(0);
 			select.selectByIndex(1);
 			// Iframe
-			List<WebElement> frames = driver.findElements(By.tagName("iframe"));
+			List<WebElement> frames = getDriver().findElements(By.tagName("iframe"));
 			System.out.println("Total frames: " + frames.size());
 			System.out.println("frame count is calculated");
-			WebElement frame = driver.findElement(By.xpath("//iframe[@id='courses-iframe']"));
-			if (browser.equalsIgnoreCase("FireFox")) {
-				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", frame);
+			WebElement frame = getDriver().findElement(By.xpath("//iframe[@id='courses-iframe']"));
+			String mavenbrowsername=System.getProperty("browser");
+			if (mavenbrowsername.equalsIgnoreCase("FireFox")) {
+				((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView(true);", frame);
 			}
-			driver.switchTo().frame(frame);
+			getDriver().switchTo().frame(frame);
 			System.out.println("frame is selected as per aviliable");
-			driver.findElement(By.xpath("//div[@class='logo']//a")).isDisplayed();
-			List<WebElement> alllinksfromframe = driver.findElements(By.xpath("//li/a"));
+			getDriver().findElement(By.xpath("//div[@class='logo']//a")).isDisplayed();
+			List<WebElement> alllinksfromframe = getDriver().findElements(By.xpath("//li/a"));
 			System.out.println("Totsal WebLinks under Frame : " + alllinksfromframe.size());
-			WebElement morelink = driver.findElement(By.linkText("More"));
+			WebElement morelink = getDriver().findElement(By.linkText("More"));
 			mouse.moveToElement(morelink).build().perform();
 
-			WebDriverWait wt = new WebDriverWait(driver, Duration.ofSeconds(10));
-			wt.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.linkText("Contact"))));
-			driver.findElement(By.linkText("Contact")).click();
+			WebDriverWait wt = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+			wt.until(ExpectedConditions.elementToBeClickable(getDriver().findElement(By.linkText("Contact"))));
+			getDriver().findElement(By.linkText("Contact")).click();
 			Thread.sleep(1000);
 
-			driver.switchTo().defaultContent();
+			getDriver().switchTo().defaultContent();
 
 			// Window Handling
 
-			driver.findElement(By.cssSelector("#openwindow")).click();
+			getDriver().findElement(By.cssSelector("#openwindow")).click();
 
-			Set<String> windows = driver.getWindowHandles();
+			Set<String> windows = getDriver().getWindowHandles();
 			Iterator<String> it = windows.iterator();
 
 			String parent = it.next();
 			String child = it.next();
 
-			driver.switchTo().window(child);
-			System.out.println("Switch to Window url :" + driver.getCurrentUrl());
+			getDriver().switchTo().window(child);
+			System.out.println("Switch to Window url :" + getDriver().getCurrentUrl());
 
-			System.out.println("Window Title :" + driver.getTitle());
+			System.out.println("Window Title :" + getDriver().getTitle());
 
-			Assert.assertEquals(driver.findElement(By.xpath("//a[contains(text(),'Get This Domain')]")).getText(),
+			Assert.assertEquals(getDriver().findElement(By.xpath("//a[contains(text(),'Get This Domain')]")).getText(),
 					"Get This Domain");
-			driver.switchTo().window(parent);
-			System.out.println("Switch to Window url :" + driver.getCurrentUrl());
+			getDriver().switchTo().window(parent);
+			System.out.println("Switch to Window url :" + getDriver().getCurrentUrl());
 
-			System.out.println("Parent window title :" + driver.getTitle());
+			System.out.println("Parent window title :" + getDriver().getTitle());
 			// Scroll down to specific element
-			WebElement scrolldowinelement = driver.findElement(By.cssSelector("#mousehover"));
+			WebElement scrolldowinelement = getDriver().findElement(By.cssSelector("#mousehover"));
 
-			JavascriptExecutor js = (JavascriptExecutor) driver;
+			JavascriptExecutor js = (JavascriptExecutor) getDriver();
 			js.executeScript("arguments[0].scrollIntoView(true);", scrolldowinelement);
 			Thread.sleep(1000);
 
 			// take screenshot of full page
 			String filePath = "E:\\Karate_Project\\API_UI\\target\\Images\\Screenshot_" + System.currentTimeMillis()
 					+ ".png";
-			TakesScreenshot ts = (TakesScreenshot) driver;
+			TakesScreenshot ts = (TakesScreenshot) getDriver();
 			File source = ts.getScreenshotAs(OutputType.FILE);
 			File destination = new File(filePath);
 			FileHandler.copy(source, destination);

@@ -1,3 +1,9 @@
+utils\Helper.class
+base\Base1.class
 TEST\API_UI\Runner.class
+PageObject\automationexercise\Home.class
 pojo\Pojoforempdetails.class
 TEST\API_UI\App.class
+base\Base.class
+PageObject\automationexercise\Registeration.class
+PageObject\automationexercise\Signup.class

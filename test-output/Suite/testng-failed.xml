@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="DemoSite(failed)">
     <classes>
-      <class name="automationexercise.testcases.LoginAndRegisteration">
+      <class name="selenium.DemoSite">
         <methods>
           <include name="tearDown"/>
           <include name="intilizeDriver"/>
-          <include name="openapplication"/>
-          <include name="VerifyPasswordRequiredField"/>
-          <include name="Testcase_Registeration"/>
+          <include name="lunchdempapp"/>
+          <include name="uploadFile"/>
         </methods>
-      </class> <!-- automationexercise.testcases.LoginAndRegisteration -->
+      </class> <!-- selenium.DemoSite -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- DemoSite(failed) -->
 </suite> <!-- Failed suite [Suite] -->
